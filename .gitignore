@@ -130,3 +130,10 @@ dmypy.json
 
 # Don't commit the trained models
 models/
+.mice_ethology/pyvenv.cfg
+.mice_ethology/Scripts/activate.bat
+.mice_ethology/Scripts/activate
+.mice_ethology/Scripts/Activate.ps1
+*.exe
+*.bat
+.mice_ethology/share/man/man1/ttx.1

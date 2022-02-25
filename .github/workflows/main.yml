@@ -15,9 +15,6 @@ jobs:
     - name: Lint
       run: |
         make lint
-    - name: Format
-      run: |
-        make format
     - name: Test
       run: |
         make test

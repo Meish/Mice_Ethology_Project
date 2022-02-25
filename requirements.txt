@@ -10,3 +10,5 @@ seaborn
 progressbar   
 pandas
 scikit-video  
+PyYAML
+openpyxl

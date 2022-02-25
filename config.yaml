@@ -1,0 +1,4 @@
+---
+path_to_metadata: 'C:\python_repos\Mice_Ethology_Project\metadata.xlsx'
+verbose: True
+present_graphs: True

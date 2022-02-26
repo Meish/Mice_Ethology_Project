@@ -1,4 +1,7 @@
 ---
 path_to_metadata: 'C:\python_repos\Mice_Ethology_Project\metadata.xlsx'
-verbose: True
-present_graphs: True
+verbose: False
+present_graphs: False
+exploratory analysis: False
+path_to_examples_folder: 'Data_examples'
+example_name: 'Mouse161_20161017_19-30-58'

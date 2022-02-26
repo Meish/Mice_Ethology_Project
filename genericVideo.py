@@ -34,6 +34,16 @@ class vidReader:
             self.IM_H = self._reader.get(cv2.CAP_PROP_FRAME_HEIGHT)
             self.IM_W = self._reader.get(cv2.CAP_PROP_FRAME_WIDTH)
 
+    def toString(self):
+        s = f"This video has:\n \
+            {self.NUM_FRAMES} frames \n \
+            is {self.IM_H} X {self.IM_W} \n \
+            {self.fps} FPS \n \
+            Format: {self.ext} \n \
+            "
+        return s
+
+
     def seek(self, f):
         if self.ext == ".seq":
             # I'm not sure this is a thing for seq files

@@ -1,7 +1,16 @@
-from main import calculate_addition
+from main import read_metadata
+
+def test_read_metadata():
+    metadata = read_metadata('metadata.xlsx')
+    assert(len(metadata.index)) == 63
+    print("read_metadata test - Passed")
+
+def main():
+    test_read_metadata()
+
+if __name__ == '__main__':
+    main()
 
 
-def test_addition():
-    assert calculate_addition(1, 3) == 4
-    assert calculate_addition(12, 3) == 15
-    print("test_addition - Passed!")
+
+

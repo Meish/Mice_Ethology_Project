@@ -12,3 +12,4 @@ pandas
 scikit-video  
 PyYAML
 openpyxl
+pylint-exit

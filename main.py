@@ -1,11 +1,11 @@
 # import seaborn as sns
 # import pandas as pd
-from utils import read_excel, read_yaml, read_json
+from utils import read_excel, read_yaml
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
 import os
-import glob
+# import glob
 from genericVideo import vidReader
 
 
@@ -34,22 +34,22 @@ def show_metdata_graphs(metadata):
 
 def exploratory_analysis(path_to_folder):
         
-        video = vidReader(os.path.join(path_to_folder, 'Mouse158_20161017_18-02-32_Top_J85.seq'))
-        print(video.toString())
+    video = vidReader(os.path.join(path_to_folder, 'Mouse158_20161017_18-02-32_Top_J85.seq'))
+    print(video.toString())
 
-    ### Extract one frame from the movie
-        frame_num = 10
-        mouse_num = 0
-    
-        frame = video.getFrame(frame_num)
-        plt.imshow(frame)
-        plt.show()
+### Extract one frame from the movie
+    frame_num = 10
+    # mouse_num = 0
 
-    ### show pose estimates for this image
-        json_result = read_json(os.path.join(path_to_folder, 'Mouse158_20161017_18-02-32_pose_top_v1_8.json'))
-        npz_result = np.load(os.path.join(path_to_folder, 'Mouse158_20161017_18-02-32_raw_feat_top_v1_8.npz'))
-        npz_result.f.bbox[:,:, frame_num]
-        npz_result.f.data_smooth[mouse_num,frame_num, :]
+    frame = video.getFrame(frame_num)
+    plt.imshow(frame)
+    plt.show()
+
+### show pose estimates for this image
+    # json_result = read_json(os.path.join(path_to_folder, 'Mouse158_20161017_18-02-32_pose_top_v1_8.json'))
+    # npz_result = np.load(os.path.join(path_to_folder, 'Mouse158_20161017_18-02-32_raw_feat_top_v1_8.npz'))
+    # npz_result.f.bbox[:,:, frame_num]
+    # npz_result.f.data_smooth[mouse_num,frame_num, :]
 
 
 def main(config):

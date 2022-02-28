@@ -13,6 +13,7 @@ jobs:
       run: |
         make install
     - name: Lint
+      shell: bash
       run: |
         make lint
     - name: Test

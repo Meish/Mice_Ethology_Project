@@ -1,2 +1,1 @@
-# Util
-Utility functionality common to MARS and BENTO
+[![Ethology - Test on Ubuntu - Meishar](https://github.com/Meish/Mice_Ethology_Project/actions/workflows/main.yml/badge.svg)](https://github.com/Meish/Mice_Ethology_Project/actions/workflows/main.yml)
